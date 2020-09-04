@@ -4,5 +4,5 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('users/group',views.createGroupForUser),
+    path('users/<str:username>/group',views.updateGroupForUser),
 ]
